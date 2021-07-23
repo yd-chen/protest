@@ -1,0 +1,51 @@
+{
+    "header": [
+        " *   ",
+        " *   文件描述：本文件为请求参数，包括不限于网址、请求头、响应头、COOKIE、Referer、UserAgent",
+        " *   本文件仅为记录详细请求参数便于调试，非专业人员可将本文件删除",
+        " *   详细介绍请参考: https://bazhan.me/faq",
+        " *   "
+    ],
+    "directory": "event-adtiger-cn-l4kc1m5g",
+    "options": {
+        "url": "http://event.adtiger.cn/agete/2019/xmas/",
+        "index": "index.html",
+        "domain": "event.adtiger.cn",
+        "ipaddress": "115.29.170.40",
+        "filenameGenerator": "byType",
+        "request": {
+            "headers": {
+                "accept": "text/html,*/*",
+                "accept-language": "zh-CN,zh;q=0.9",
+                "accept-encoding": "gzip",
+                "cache-control": "no-cache",
+                "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36",
+                "x-scraper-website": "https://bazhan.me/"
+            }
+        },
+        "response": {
+            "statusCode": 200,
+            "headers": {
+                "server": "nginx/1.12.2",
+                "date": "Mon, 11 Jan 2021 08:43:46 GMT",
+                "content-type": "text/html",
+                "content-length": "65153",
+                "connection": "close",
+                "last-modified": "Thu, 12 Dec 2019 06:00:03 GMT",
+                "etag": "\"e3b0f5-fe81-5997b74d8d455\"",
+                "accept-ranges": "bytes"
+            }
+        }
+    },
+    "user": {
+        "isWhite": false
+    },
+    "formatter": [
+        "saveOriginal"
+    ],
+    "time": {
+        "start": 1610354625803,
+        "end": 1610354642008,
+        "spend": "16.205s"
+    }
+}

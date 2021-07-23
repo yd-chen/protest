@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="timer"></div>
+    <div id="warring"></div>
+
+    <!-- 
+        JS十分钟倒计时代码的具体步骤：
+
+            1、设置考试时长maxtime = 10 * 60秒，即10分钟
+
+            2、用if函数判断，当maxtime大于等于零时，判断剩余分和秒
+
+            3、再用if函数判断，当时间仅剩5分钟时，弹出提示：距离结束仅剩5分钟
+
+            4、如果时间到，则清除定时器，提示：结束 
+    -->
+    <script>
+        'use strict'
+        var maxtime = 5 * 60; // 
+        var timer = ''
+
+        function CountDown() {
+            if (maxtime >= 0) {
+                var minutes = Math.floor(maxtime / 60) < 10 ? '0' + Math.floor(maxtime / 60) : Math.floor(maxtime / 60);
+                var seconds = Math.floor(maxtime % 60) < 10 ? '0' + Math.floor(maxtime % 60) : Math.floor(maxtime % 60);
+                var msg = "距离结束还有" + minutes + "分" + seconds + "秒";
+                document.all["timer"].innerHTML = msg;
+                if (maxtime == 4 * 60) {
+                    console.log("距离结束仅剩4分钟")
+                };
+                --maxtime;
+            } else {
+                clearInterval(timer);
+                // alert("时间到，结束!");
+                console.log("重新倒计时5分钟");
+                maxtime = 5 * 60
+                timer = setInterval("CountDown()", 1000); 
+            }
+        }
+        timer = setInterval("CountDown()", 1000); 
+    </script>
+</body>
+</html>

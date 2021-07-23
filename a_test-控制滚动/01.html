@@ -1,0 +1,48 @@
+<!doctype html>
+    <head>
+        <title></title>
+<!-- js主要通过4个属性来控制滚动条：
+scrollHeight: 获取对象可滚动的高度。
+scrollLeft:获取或设置对象已横向滚动的距离（距左端）。
+scrollTop:获取或设置对象已纵向滚动的距离。
+scrollWidth:获取对象可滚动的宽度.
+
+作者：罂粟1995
+链接：https://www.jianshu.com/p/42549f7137e8
+来源：简书
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。 -->
+        <style>
+            #main{
+                height:500px;
+                overflow-y:scroll;
+                background: pink;
+            }
+            #div{
+                height:2000px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="main">
+            <div id="div"></div>
+        </div>
+    </body>
+    <script>
+        window.onload=function(){
+            setInterval(function(){
+                var hScrollTop = document.getElementById('main').scrollTop; 
+                var hScrollHeight = document.getElementById('main').scrollHeight;
+                var height = document.getElementById('main').offsetHeight;
+                console.log('height', height)
+                console.log(hScrollTop+" "+hScrollHeight+" "+height);
+                if((height+hScrollTop)>=hScrollHeight){//滚动条已经到了容器底部
+                    console.log('已经滚到底了')
+                    document.getElementById('main').scrollTop=0;
+                }else{
+                    var h = hScrollTop + height;
+                    document.getElementById('main').scrollTop=h;
+                }
+            },1500);
+        }
+    </script>
+</html>

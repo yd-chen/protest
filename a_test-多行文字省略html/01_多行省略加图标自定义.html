@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>多行省略加图标自定义</title>
+</head>
+<style>
+    p {
+        position:relative;
+        line-height: 1.4em;
+        /*三倍line-height去显示三行*/
+        height:4.2em;
+        /*多余的隐藏*/
+        overflow:hidden;
+    }
+
+    p::after {
+        content:"...";
+        font-weight:bold;
+        position:absolute;
+        bottom:0;
+        right:0;
+        width: 94px;
+        height: 18px;
+        /* padding:0 20px 1px 45px; */
+        background:url(./btn_see_more@2x.png) center right no-repeat;
+        background-size: 52px;
+    }
+</style>
+<body>
+    <p>css多行省略也就只有chrome中可以实现，在其他浏览器貌似不行，js去解决的话，又出现一闪的效果。这种体验又不好，哪位大神有更好的解决办法？</p>
+</body>
+</html>

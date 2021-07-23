@@ -1,0 +1,6 @@
+.user-pager .cube-tab-bar-slider {
+    left: calc(25% - 9px);
+    width: 18px !important;
+    height: 3px;
+    border-radius: 2px;
+}

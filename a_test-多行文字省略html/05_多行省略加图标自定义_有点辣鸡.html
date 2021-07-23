@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .con{
+            width: 375px;
+            height: 1920px;
+            font-size: 16px;
+            line-height: 32px;
+            color: #666666;
+        }
+ 
+        a{
+            margin-left: 15px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+<div class="con" id="con">
+    德玛西亚数字科技从事数字视觉领域研发、软件开发、数据处理、虚拟仿真、数字内容制作、交互系统集成的综合性高新技术企业，企业团队由一批业内资深设计专家及系统工程师组成；旗下研发“诺克萨斯”、“艾欧尼亚”两大服务平台，为产业互联网虚拟仿真云服务提供解决方案；数据是未来的生产资料，商用的eMBB，VR、AR、3D仿真将触控视界，全新的感知与认知，审美零距离，使3D移动、web呈现，简洁、高效、生动，是时间、空间、情感的纽带，是企业价值提升，文化自信的先进语言。
+    我们以专注务实创新的精神，专业优质的团队，满怀利他之心，充分利用科技智能与团队智慧，为产业互联网赋能而奋斗！创新是一个民族进步的灵魂！AI普惠时代的立体化感知，让世界鉴赏德玛西亚创造！
+ 
+</div>
+</body>
+</html>
+<script>
+    function init(){
+        //
+        var len = 68;      //计算出每一行所能显示的字数个数，假设我要显示3行，乘以3即可，然后在减去一点距离就能达到这个效果
+        var con = document.getElementById("con");
+        var content = con.innerHTML;       //获取div里的文本内容
+ 
+ 
+        var span = document.createElement("span");     //创建<span>元素
+        var a = document.createElement("a");           //创建<a>元素
+        span.innerHTML = content.substring(0,len);     //span的内容就是con的前len个字符
+ 
+        a.innerHTML = content.length>len?"... 展开":""; //判断显示的字数是否大于默认显示的字数    来设置a的显示
+        a.href = "javascript:void(0)";//让a链接点击不跳转
+ 
+        a.onclick = function(){
+            if(a.innerHTML.indexOf("展开")>0){      //如果a中含有"展开"则显示"收起"
+                a.innerHTML = "<<&nbsp;收起";
+                span.innerHTML = content;
+            }else{
+                a.innerHTML = "... 展开";
+                span.innerHTML = content.substring(0,len);
+            }
+        };
+        // 设置div内容为空，span元素 a元素加入到div中
+        con.innerHTML = "";
+        con.appendChild(span);
+        con.appendChild(a);
+    }
+    init()
+ 
+</script>

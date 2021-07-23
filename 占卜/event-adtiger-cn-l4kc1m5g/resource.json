@@ -1,0 +1,166 @@
+{
+    "header": [
+        " *   ",
+        " *   文件描述：本文件为网页资源信息",
+        " *   success字段为下载保存成功的资源;failures字段则为下载保存失败的资源URL",
+        " *   success字段为标准树结构，每一层资源父子关系、URL和保存路径清晰明了",
+        " *   本文件仅为记录检测到的网页资源以便于调试，非专业人员可将本文件删除",
+        " *   详细介绍请参考: https://bazhan.me/faq",
+        " *   "
+    ],
+    "success": [
+        {
+            "url": "http://event.adtiger.cn/agete/2019/xmas/",
+            "path": "index.html",
+            "children": [
+                {
+                    "url": "https://ttg-h5.oss-cn-hangzhou.aliyuncs.com/ageteXmas/img/com/bg/back.png",
+                    "path": "images/back_1.png"
+                },
+                {
+                    "url": "https://ttg-h5.oss-cn-hangzhou.aliyuncs.com/ageteXmas/img/com/bg/sp/back.png",
+                    "path": "images/back.png"
+                },
+                {
+                    "url": "https://ttg-h5.oss-cn-hangzhou.aliyuncs.com/ageteXmas/img/com/bg/card2.jpg",
+                    "path": "images/card2.jpeg"
+                },
+                {
+                    "url": "https://ttg-h5.oss-cn-hangzhou.aliyuncs.com/ageteXmas/img/com/bg/card3.jpg",
+                    "path": "images/card3.jpeg"
+                },
+                {
+                    "url": "https://ttg-h5.oss-cn-hangzhou.aliyuncs.com/ageteXmas/img/com/bg/card4.jpg",
+                    "path": "images/card4.jpeg"
+                },
+                {
+                    "url": "https://ttg-h5.oss-cn-hangzhou.aliyuncs.com/ageteXmas/img/com/bg/card1.jpg",
+                    "path": "images/card1.jpeg"
+                },
+                {
+                    "url": "https://ttg-h5.oss-cn-hangzhou.aliyuncs.com/ageteXmas/img/com/bg/card_strength.jpg",
+                    "path": "images/card_strength.jpeg"
+                },
+                {
+                    "url": "https://ttg-h5.oss-cn-hangzhou.aliyuncs.com/ageteXmas/img/com/bg/card_star.jpg",
+                    "path": "images/card_star.jpeg"
+                },
+                {
+                    "url": "https://ttg-h5.oss-cn-hangzhou.aliyuncs.com/ageteXmas/img/com/bg/card_sun.jpg",
+                    "path": "images/card_sun.jpeg"
+                },
+                {
+                    "url": "https://ttg-h5.oss-cn-hangzhou.aliyuncs.com/ageteXmas/img/com/bg/card_wheeloffortune.jpg",
+                    "path": "images/card_wheeloffortune.jpeg"
+                },
+                {
+                    "url": "https://ttg-h5.oss-cn-hangzhou.aliyuncs.com/ageteXmas/img/com/bg/card_lovers.jpg",
+                    "path": "images/card_lovers.jpeg"
+                },
+                {
+                    "url": "https://ttg-h5.oss-cn-hangzhou.aliyuncs.com/ageteXmas/img/com/bg/card_world.jpg",
+                    "path": "images/card_world.jpeg"
+                },
+                {
+                    "url": "https://ttg-h5.oss-cn-hangzhou.aliyuncs.com/ageteXmas/img/com/bg/card_com_ura.jpg",
+                    "path": "images/card_com_ura.jpeg"
+                },
+                {
+                    "url": "https://ttg-h5.oss-cn-hangzhou.aliyuncs.com/ageteXmas/img/home/question/card_ura.jpg",
+                    "path": "images/card_ura.jpeg"
+                },
+                {
+                    "url": "https://res.wx.qq.com/open/js/jweixin-1.2.0.js",
+                    "path": "js/jweixin-1.2.0.js"
+                },
+                {
+                    "url": "http://event.adtiger.cn/agete/2019/xmas/js/config.js",
+                    "path": "js/config.js"
+                },
+                {
+                    "url": "https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js",
+                    "path": "js/jquery.min.js"
+                },
+                {
+                    "url": "https://ttg-h5.oss-cn-hangzhou.aliyuncs.com/ageteXmas/js/lib/TweenMax.min.js",
+                    "path": "js/TweenMax.min.js"
+                },
+                {
+                    "url": "https://ttg-h5.oss-cn-hangzhou.aliyuncs.com/ageteXmas/js/lib/ScrollToPlugin.min.js",
+                    "path": "js/ScrollToPlugin.min.js"
+                },
+                {
+                    "url": "https://ttg-h5.oss-cn-hangzhou.aliyuncs.com/ageteXmas/js/lib/jquery.matchHeight.js",
+                    "path": "js/jquery.matchHeight.js"
+                },
+                {
+                    "url": "https://ttg-h5.oss-cn-hangzhou.aliyuncs.com/ageteXmas/js/home.min.js",
+                    "path": "js/home.min.js"
+                },
+                {
+                    "url": "http://event.adtiger.cn/agete/2019/xmas/js/share.js",
+                    "path": "js/share.js"
+                },
+                {
+                    "url": "http://event.adtiger.cn/agete/2019/xmas/css/style.min.css",
+                    "path": "css/style.min.css",
+                    "children": [
+                        {
+                            "url": "https://ttg-h5.oss-cn-hangzhou.aliyuncs.com/ageteXmas/img/com/btn_bg_pattern.png",
+                            "path": "images/btn_bg_pattern.png"
+                        },
+                        {
+                            "url": "https://ttg-h5.oss-cn-hangzhou.aliyuncs.com/ageteXmas/img/com/bg/site_bg_pattern.png",
+                            "path": "images/site_bg_pattern.png"
+                        },
+                        {
+                            "url": "https://ttg-h5.oss-cn-hangzhou.aliyuncs.com/ageteXmas/img/com/frame_l_top.png",
+                            "path": "images/frame_l_top.png"
+                        },
+                        {
+                            "url": "https://ttg-h5.oss-cn-hangzhou.aliyuncs.com/ageteXmas/img/com/frame_l_bottom.png",
+                            "path": "images/frame_l_bottom.png"
+                        },
+                        {
+                            "url": "https://ttg-h5.oss-cn-hangzhou.aliyuncs.com/ageteXmas/img/com/frame_r_top.png",
+                            "path": "images/frame_r_top.png"
+                        },
+                        {
+                            "url": "https://ttg-h5.oss-cn-hangzhou.aliyuncs.com/ageteXmas/img/com/frame_r_bottom.png",
+                            "path": "images/frame_r_bottom.png"
+                        },
+                        {
+                            "url": "https://ttg-h5.oss-cn-hangzhou.aliyuncs.com/ageteXmas/img/com/frame_horizontal_top.png",
+                            "path": "images/frame_horizontal_top.png"
+                        },
+                        {
+                            "url": "https://ttg-h5.oss-cn-hangzhou.aliyuncs.com/ageteXmas/img/com/frame_horizontal_bottom.png",
+                            "path": "images/frame_horizontal_bottom.png"
+                        },
+                        {
+                            "url": "https://ttg-h5.oss-cn-hangzhou.aliyuncs.com/ageteXmas/img/com/frame_vertical_l.png",
+                            "path": "images/frame_vertical_l.png"
+                        },
+                        {
+                            "url": "https://ttg-h5.oss-cn-hangzhou.aliyuncs.com/ageteXmas/img/com/frame_vertical_r.png",
+                            "path": "images/frame_vertical_r.png"
+                        },
+                        {
+                            "url": "https://ttg-h5.oss-cn-hangzhou.aliyuncs.com/ageteXmas/img/home/question/step_lion--off.png",
+                            "path": "images/step_lion--off.png"
+                        },
+                        {
+                            "url": "https://ttg-h5.oss-cn-hangzhou.aliyuncs.com/ageteXmas/img/home/question/step_lion--on.png",
+                            "path": "images/step_lion--on.png"
+                        },
+                        {
+                            "url": "https://ttg-h5.oss-cn-hangzhou.aliyuncs.com/ageteXmas/img/com/ico_scroll.png",
+                            "path": "images/ico_scroll.png"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "failures": []
+}

@@ -1,0 +1,27 @@
+body {
+  background-color: #F6F7FA
+}
+
+/* 直播间页面 popper样式 */
+.user-signout-popper.el-popper {
+  margin-top: 0;
+}
+.user-signout-popper.el-popper .popper__arrow {
+  display: none;
+}
+/* 直播间页面 NavMenu导航样式 */
+.live-main-nav .el-breadcrumb__inner.is-link,
+.live-main-nav .el-breadcrumb__item:last-child .el-breadcrumb__inner {
+  height:18px;
+  font-size:18px;
+  font-family:PingFangSC-Regular,PingFang SC;
+  font-weight:400;
+  color: #191919;
+  line-height:18px;
+}
+.live-main-nav .el-icon-arrow-right:before {
+  display: none;
+}
+.live-main-nav .el-breadcrumb__separator {
+  margin: 0;
+}

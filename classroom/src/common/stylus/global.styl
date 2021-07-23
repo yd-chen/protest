@@ -1,0 +1,45 @@
+@import "variable.styl"
+@import "mixin.styl"
+
+// cube-ui 的滚动文字提示
+.cube-pulldown-loaded {
+  font-size: $font-size-small
+  color: $color-text-l
+}
+
+.user-pager {
+  .cube-tab-bar {
+    background-color: #fff
+    .cube-tab {
+      .tab-text {
+        font-size: $font-size-medium-x
+        color: $color-text-l
+      }
+      &.cube-tab_active {
+        .tab-text {
+          font-size: $font-size-large
+          font-weight: 500
+          color: $color-text
+        }
+      }
+    }
+  }
+}
+
+#nprogress .bar {
+  background: #ff9645;
+}
+
+#nprogress .peg {
+  box-shadow: 0 0 10px #ff9645, 0 0 5px #ff9645;
+}
+
+#nprogress .spinner-icon {
+  border-top-color: #ff9645;
+  border-left-color: #ff9645;
+}
+
+#nprogress .spinner {
+  display: none;
+}
+

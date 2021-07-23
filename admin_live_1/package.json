@@ -1,0 +1,21 @@
+{
+  "name": "admin_live_1",
+  "version": "1.0.0",
+  "description": "这次选项换了‘Choose rendering mode’换成single app..",
+  "author": "yd",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "nuxt": "^2.0.0",
+    "element-ui": "^2.4.11"
+  },
+  "devDependencies": {
+    "stylus": "^0.54.7",
+    "stylus-loader": "^3.0.2"
+  }
+}

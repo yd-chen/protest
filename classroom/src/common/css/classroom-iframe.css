@@ -1,0 +1,161 @@
+.article-main-pal {
+  margin: 20px;
+  -ms-word-wrap: break-word;
+  word-wrap: break-word;
+  font-family: Helvetica Neue, Helvetica, PingFang SC, Lantinghei SC, "sans-serif";
+  color: #3a3a3a;
+  line-height: 28px;
+  font-size: 16px;
+}
+
+.article-main-pal .img-center-box {
+  text-align: center;
+}
+
+.article-main-pal .edui-default .edui-box.edui-for-insertimage, .edui-default .edui-box.edui-for-imgUpload {
+  display: none !important;
+}
+
+.article-main-pal img {
+  -webkit-user-select: none !important;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
+  -o-user-select: none !important;
+  user-select: none !important;
+  max-width: 100%;
+  height: auto;
+  background-color: #eeedeb;
+  object-fit: cover;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+
+.article-main-pal p {
+  margin: 0 !important;
+  /* margin: 10px 0 !important; */
+  font-size: 16px !important;
+  font-weight: 400 !important;
+  line-height: 28px !important;
+  text-align: justify;
+}
+
+.article-main-pal h2 {
+  margin: 0 !important;
+  /* margin: 18px 0 24px !important; */
+  font-size: 24px !important;
+  color: #191919 !important;
+  font-weight: 900 !important;
+  line-height: 32px !important;
+}
+
+.article-main-pal h3 {
+  margin: 0 !important;
+  /* margin: 15px 0 20px !important; */
+  font-size: 20px !important;
+  color: #191919 !important;
+  font-weight: 700 !important;
+  line-height: 32px !important;
+}
+
+.article-main-pal h4 {
+  margin: 0 !important;
+  /* margin: 10px 0 15px !important; */
+  font-size: 18px !important;
+  color: #191919 !important;
+  font-weight: 500 !important;
+  line-height: 28px !important;
+}
+
+.article-main-pal h5 { /* 备注 */
+  margin: 0 !important;
+  font-size: 16px !important;
+  color: #999 !important;
+  font-weight: 400 !important;
+  line-height: 28px !important;
+}
+
+.article-main-pal h6 { /* 图片标识 */
+  margin: 8px 0 0 !important;
+  font-size: 12px !important;
+  color: #999 !important;
+  font-weight: 400 !important;
+  line-height: 16px !important;
+}
+
+.article-main-pal strong {
+  font-weight: 700 !important;
+  color: #191919 !important;
+}
+
+.article-main-pal .text-sm-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #a41d1d;
+}
+
+.article-main-pal .text-hxzhu {
+  color: #999;
+}
+
+.article-main-pal .text-remarks {
+  color: #999;
+}
+
+.article-main-pal .list-paddingleft-2 {
+  padding-left: 17px !important;
+}
+
+.article-main-pal blockquote {
+  margin: 0 !important;
+  border: none !important;
+  padding: 40px 16px 20px 40px !important;
+  background: #f5f5f5 url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAp5JREFUaAXtWGuzojAMjVUBxQfu//+H986syEtFYTnepQs+aICwjjPkC4W2Oee0JSRMgjDK6YNNfTD3G/VRwLt3cNyBcQd6rsDHH6EZdwHyPKf9/jedTyfa7X6RZdvcqZ3GcfHYOxAGAR2ThLIsozAMO5FqM4mLxxJwuVwK0oHGdxaObg/RaIPHEuAXR6c0y7JouXTL20GubfCMAuI4ovP5rIlut55uD9Foi9co4Hq9UnA4aJ6r1Zpm87m+l250wWsUEASH20sLotPplFbrtTTnmr8ueC8FIFwmcawBtp5Hk8lE30s3uuI9FYAY7Pt7zdFZLMi2h4s8ffCeCkAMRiiDKaVou9lqMUM0+uA9CLiPweuCvCrO/1DWF+8hlajGYJDG1zeOIsI240XGd8B2bJrPLRFNffEm1ZoYMdjf/zv7TQyRC202m15CJPD0EbqPwU3k0Yeo8f31RXElUpnmVPul8LSAagyuApnaOAI4Ym1NCu8m4HQX89uSQcitphum+ZJ4NwHVTNME/qr/4Puvuh6eS+IprBzOc19L0zOdTkejG2k8lRSRR8qOiVmANJ5CNJAy7ILJpPFUmv6kDCZgTj+HnDSeyvOMw401Bl9rk0njFWmOXJ7D8cUZY1qEsh++1Gz2kA6V/a2vHF+cMVxg+FK2I5fnc3xxxnAFwJdaLJYi6TJSbvgymTSeQpmIYr2vwQen5JTGu6USrusSysauhrnwwTVJPJ2Net6OnA7vA+ZgbluTwqsVNCARRSGhRsU/0CZDrYzfLK67ahpm7OuL9yAAiCCPagnlZJqmNRLz4scWjgx+L0KEhPXBeyrgnlT2N18asrivYrbBY33F/hfxUkQbPJkzUCK/4ToKeMOi1yDHHagtxxtuxh14w6LXIP8A+PWXJKV/GocAAAAASUVORK5CYII=) 16px 12px/24px 24px no-repeat !important;
+  -webkit-background-size: 24px !important;
+  background-size: 24px !important;
+  display: block !important;
+  font-size: 16px !important;
+  color: #3a3a3a !important;
+  line-height: 28px !important;
+}
+
+.article-main-pal a {
+  color: #5580AE;
+  /* border-bottom: 1px solid #5580AE; */
+  /* padding-bottom: 5px; */
+  text-decoration: underline;
+}
+
+.article-main-pal a:hover {
+  border-bottom: 1px solid #3a3a3a;
+  color: #3a3a3a;
+}
+
+.article-main-pal .border-none {
+  border: none !important;
+}
+
+.article-main-pal .videoA {
+  display: inline-block;
+  height: 400px;
+  width: 710px;
+  background: url("https://img.huxiucdn.com/article/cover/201607/20/155142900988.jpg");
+  background-size: 100%;
+}
+
+/*下面ul的样式默认设为none，是因为在编辑器中如果有ul li结构前面默认会有小黑点，要去掉。这样设置小黑点的样式只能通过菜单手动添加。而且这里不能设置li默认为none。*/
+.article-main-pal ul {
+  list-style-type: none;
+}
+
+.article-main-pal ul li {
+  list-style-type: inherit;
+}
+
+.article-main-pal ol {
+  list-style-type: decimal;
+}
+
+.article-main-pal ol li {
+  list-style-type: inherit;
+}

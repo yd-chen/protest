@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>多行省略加图标自定义——js实现</title>
+</head>
+<style>
+    .demo {
+        background: skyblue;
+    }
+</style>
+<body>
+	<div class='demo'></div>
+</body>
+
+<script type="text/javascript">
+    const text = 
+        '这是一段很长的文本这是一段很长的文本这是一段很长的文本这是一段很长的文本这是一段很长的文本这是一段很长的文本这是一段很长的文本这是一段很长的文本这是一段很长的文本这是一段很长的文本这是一段很长的文本这是一段很长的文本这是一段很长的文本这是一段很长的文本';
+        // 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod excepturi ducimus sed facere eius quidem, nesciunt rerum qui deleniti aspernatur praesentium corporis, dolore explicabo. Ipsam aut soluta inventore quaerat facere.'
+        // 'Lorem ipsum dolor sit amet,很长的文本这是一段很长的文本这是一段很长的文本这是一段很长的文本这是一段很 consectetur adipisicing elit. Quod excepturi'
+        const totalTextLen = text.length;
+    const formatStr = () => {
+        const ele = document.getElementsByClassName('demo')[0];
+        const lineNum = 2;
+        const baseWidth = window.getComputedStyle(ele).width;
+        const baseFontSize = window.getComputedStyle(ele).fontSize;
+        const lineWidth = +baseWidth.slice(0, -2);
+
+        // 所计算的strNum为元素内部一行可容纳的字数(不区分中英文)
+        const strNum = Math.floor(lineWidth / +baseFontSize.slice(0, -2));
+
+        let content = '';
+        
+      	// 多行可容纳总字数
+        const totalStrNum = Math.floor(strNum * lineNum);
+
+        const lastIndex = totalStrNum - totalTextLen;
+
+        if (totalTextLen > totalStrNum) {
+            content = text.slice(0, lastIndex - 3).concat('...');
+        } else {
+            content = text;
+        }
+        ele.innerHTML = content;
+    }
+    
+    formatStr();
+    
+	window.onresize = () => {
+        formatStr();
+    };
+</script>
+</html>

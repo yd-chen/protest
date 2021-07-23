@@ -1,0 +1,21 @@
+{
+  "name": "testwebpackprofornpm",
+  "version": "1.0.0",
+  "description": "This is a webpack Test program made for my first npm test.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "okk"
+  ],
+  "author": "yd",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^5.25.1",
+    "webpack-cli": "^4.5.0"
+  },
+  "dependencies": {
+    "firstnpmtestpackageaaaaa": "^1.0.0"
+  }
+}

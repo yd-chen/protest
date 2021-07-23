@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="demoCanvas" class="demo"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/svgaplayerweb@2.3.1/build/svga.min.js"></script>
+    <script>
+        (function() {
+            var player = new SVGA.Player('#demoCanvas');
+            var parser = new SVGA.Parser('#demoCanvas'); // Must Provide same selector eg:#demoCanvas IF support IE6+
+            // parser.load('./svgaa.svga', function(videoItem) {
+            //     player.setVideoItem(videoItem);
+            //     player.startAnimation();
+            // })
+
+            // player.loops=1;
+            // player.clearsAfterStop=false;
+
+            var parser = new SVGA.Parser('#demoCanvas'); // 如果你需要支持 IE6+，那么必须把同样的选择器传给 Parser。
+
+
+            parser.load('http://sl.file.diaodiaosocial.com/1595325777179.svga', function(videoItem) {
+                player.setVideoItem(videoItem);
+                player.startAnimation();
+                // player.onFinished(function(){
+                //     console.log("11111")
+                //     alert("动画停止了！！！哈哈哈@@@")
+                // });
+            })
+
+        })()
+    </script>
+</body>
+</html>

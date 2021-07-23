@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <title>画图</title>
+    <style>
+      #divContainer{
+        margin-top: 20px;
+        text-align: center;
+        background: pink;
+      }
+      #cv{
+        width: 311px;
+        height: 198px;
+        /* width: 622px;
+        height: 396px; */
+        border-bottom: .5px solid #000;
+        border-left: .5px solid #000;
+      }
+      .canvas-img {
+          width: 311px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="divContainer">
+      铝锭价走势图<br/>
+      <canvas id="cv">你的设备不支持图表数据显示</canvas>
+      <img id="img" class="canvas-img" src="" alt="">
+    </div>
+    <script>
+      (function(){
+        // const WIDTH = 622;
+        // const HEIGHT = 396;
+        const WIDTH = 311;
+        const HEIGHT = 198;
+        window.onload = function(){
+            //数据源
+            var dict = [
+                {x: "03.01", y: 20},
+                {x: "03.02", y: 40},
+                {x: "03.03", y: 15},
+                {x: "03.04", y: 30},
+                {x: "03.05", y: 28},
+                // {x: "03.08", y: 0},
+                // {x: "03.08", y: 0},
+                // {x: "03.07", y: 0},
+                {x: "03.06", y: 36},
+                {x: "03.07", y: 20},
+
+                // {x: "03.08", y: 0},
+                // {x: "03.08", y: 0},
+                // {x: "03.07", y: 30},
+
+                // {x: "03.01", y: 0},
+                // {x: "03.02", y: 0},
+                // {x: "03.03", y: 0},
+                // {x: "03.04", y: 0},
+                // {x: "03.05", y: 0},
+                // {x: "03.06", y: 0},
+                // {x: "03.07", y: 0},
+            ]
+            //数据源提取
+            var len = dict.length;
+            var xArr = [], yArr = [], tmp_yArr = [];
+            for(var i = 0; i<len; i++){
+                xArr.push(i * 43 + 27);
+                tmp_yArr.push(dict[i].y);
+            }
+
+            var tmp_minY = Math.min.apply(Math, tmp_yArr);//最小值
+            var tmp_maxY = Math.max.apply(Math, tmp_yArr);//最大值
+
+            if (tmp_minY === 0 && tmp_maxY === 0) {
+                console.log('都是0')
+                for(var i=0; i<len; i++){
+                //   yArr.push(tmp_yArr[i] - tmp_minY + 110);//与最小的做比较
+                  yArr.push(tmp_yArr[i] - tmp_minY + 158);//与最小的做比较
+                }
+            } else if (tmp_minY === 0) {
+                for(var i=0; i<len; i++){
+
+                    console.log('tmp_yArr[i]', tmp_yArr[i])
+                    console.log('minY_base', 0)
+
+                    var length = 85 -  85 * (1 - tmp_yArr[i]/tmp_maxY);
+
+                    yArr.push(length + 72.5);
+                }
+            } else {
+                for(var i=0; i<len; i++){
+
+                    console.log('tmp_yArr[i]', tmp_yArr[i])
+                    console.log('minY_base', 0)
+
+                    var length = 85 -  85 * (1 - tmp_yArr[i]/tmp_maxY);
+
+                    yArr.push(length + 60);
+                }
+            }
+
+            var minY = Math.min.apply(Math, yArr);
+            var maxY = Math.max.apply(Math, yArr);
+            //canvas 准备
+            // var canvas = document.getElementById("cv");//获取canvas画布
+              var canvas = document.createElement("canvas");  
+            canvas.width = WIDTH;
+            canvas.height = HEIGHT;
+            var ctx = canvas.getContext("2d");
+            ctx.fillStyle = '#ffffff';
+            // ctx.fillRect(0, 0, 311, 198);
+            ctx.fillRect(0, 0, WIDTH, HEIGHT);
+            ctx.save()
+
+            // ctx.fillStyle = 'skyblue';
+            ctx.fillStyle = '#fff';
+            ctx.fillRect(24, 45, 263, 113);
+
+
+            // 标题
+            ctx.font = '400 12px "PingFangSC Regular"';
+            ctx.fillStyle = "#999999";
+            ctx.textBaseline="top";
+            ctx.fillText('近7天学习时长(分钟)', 24, 16);
+            ctx.save()
+
+
+            var record = [];
+            //画折线
+            for(var i=0 ;i<len; i++){
+                var x = xArr[i];
+                var y = maxY - yArr[i] + minY;
+                if(i === 0){
+                    ctx .moveTo(x, y);
+                }
+                else{
+                    ctx .lineTo(x, y);
+                }
+                record = [x, y];
+            }
+            ctx.lineWidth = 2;
+            ctx.textBaseline="bottom";
+            ctx.strokeStyle = '#FF9645'
+            ctx.stroke();
+            ctx.lineTo(285,158);
+            ctx.lineTo(27,158);
+            // 渐变填充颜色
+            var gradient=ctx.createLinearGradient(24, 45, 24, 158);
+            gradient.addColorStop(0,'rgba(252, 177, 63, 0.3)');
+            gradient.addColorStop(1,'rgba(250, 140, 29, 0)');
+            ctx.fillStyle = gradient;
+            ctx.fill();
+
+            //画点
+            for(var i=0; i<len; i++){
+                var x = xArr[i];
+                var y = maxY - yArr[i] + minY;
+                var xMemo = dict[i].x;
+                var yMemo = dict[i].y + '分';
+                if (tmp_minY !== 0 && tmp_maxY !== 0) {
+                    ctx.font = 'regular 10px "Source Han Sans Regular"';
+                    ctx.textAlign="center";
+                    ctx.fillStyle = "#191919";
+                    ctx.fillText(yMemo, x + 1, y - 10);
+                    ctx.save()
+                }
+
+                ctx.beginPath();
+                ctx.arc(x, y, 3, 0, 2*Math.PI);//画点
+                ctx.fillStyle="#fff";//设置填充颜色
+                ctx.fill();//开始填充
+                ctx.strokeStyle="#FF9645";//将线条颜色设置为蓝色
+                ctx.stroke();//stroke() 方法默认颜色是黑色（如果没有上面一行，则会是黑色）。
+                ctx.save()
+
+                ctx.font = 'regular 10px "Source Han Sans Regular"';
+                ctx.textBaseline="bottom";
+                ctx.textAlign="center";
+                ctx.fillStyle = "#191919";
+                ctx.fillText(xMemo, x, canvas.height - 16, 40);//画文字
+
+                var img = document.getElementById('img');
+                img.src = canvas.toDataURL('image/png')
+            }
+
+            }
+        })();
+    </script>
+  </body>
+</html>
+

@@ -1,0 +1,210 @@
+{
+    "header": [
+        " *   ",
+        " *   文件描述：本文件为网页资源信息",
+        " *   success字段为下载保存成功的资源;failures字段则为下载保存失败的资源URL",
+        " *   success字段为标准树结构，每一层资源父子关系、URL和保存路径清晰明了",
+        " *   本文件仅为记录检测到的网页资源以便于调试，非专业人员可将本文件删除",
+        " *   详细介绍请参考: https://bazhan.me/faq",
+        " *   "
+    ],
+    "success": [
+        {
+            "url": "https://activity.lagou.com/activity/dist/2017-summary/m_index.html",
+            "path": "index.html",
+            "children": [
+                {
+                    "url": "https://activity.lagou.com/activity/dist/2017-summary/images/loding.gif",
+                    "path": "images/loding.gif"
+                },
+                {
+                    "url": "https://activity.lagou.com/activity/dist/2017-summary/js/jquery.1.10.1.min.js?v=$version$",
+                    "path": "js/jquery.1.10.1.min.js"
+                },
+                {
+                    "url": "https://activity.lagou.com/activity/dist/2017-summary/js/loading.js?v=$version$",
+                    "path": "js/loading.js"
+                },
+                {
+                    "url": "https://activity.lagou.com/activity/dist/2017-summary/js/vue2.1.10.js?v=$version$",
+                    "path": "js/vue2.1.10.js"
+                },
+                {
+                    "url": "https://activity.lagou.com/activity/dist/2017-summary/js/m_index.js?v=$version$",
+                    "path": "js/m_index.js"
+                },
+                {
+                    "url": "https://www.lgstatic.com/activity/js/jquery.1.10.1.min.js",
+                    "path": "js/jquery.1.10.1.min_1.js"
+                },
+                {
+                    "url": "https://res.wx.qq.com/open/js/jweixin-1.0.0.js",
+                    "path": "js/jweixin-1.0.0.js"
+                },
+                {
+                    "url": "https://activity.lagou.com/activity/dist/common/js/share2.js?v=$version$",
+                    "path": "js/share2.js"
+                },
+                {
+                    "url": "https://www.lgstatic.com/common/lg-tongji/js/analytics.js",
+                    "path": "js/analytics.js"
+                },
+                {
+                    "url": "https://www.lgstatic.com/common/lg-tongji/js/plat_tj.js",
+                    "path": "js/plat_tj.js"
+                },
+                {
+                    "url": "https://activity.lagou.com/upload/oss.js?v=1010",
+                    "path": "js/oss.js"
+                },
+                {
+                    "url": "https://activity.lagou.com/activity/dist/2017-summary/css/m_index.css?v=$version$",
+                    "path": "css/m_index.css",
+                    "children": [
+                        {
+                            "url": "https://activity.lagou.com/activity/dist/2017-summary/images/cover-logo.png?v=3",
+                            "path": "images/cover-logo.png"
+                        },
+                        {
+                            "url": "https://activity.lagou.com/activity/dist/2017-summary/images/cover-logo-sohu.png?v=3",
+                            "path": "images/cover-logo-sohu.png"
+                        },
+                        {
+                            "url": "https://activity.lagou.com/activity/dist/2017-summary/images/cover-center.png?v=3",
+                            "path": "images/cover-center.png"
+                        },
+                        {
+                            "url": "https://activity.lagou.com/activity/dist/2017-summary/images/cover-bg-time.png?v=3",
+                            "path": "images/cover-bg-time.png"
+                        },
+                        {
+                            "url": "https://activity.lagou.com/activity/dist/2017-summary/images/cover-title.png?v=3",
+                            "path": "images/cover-title.png"
+                        },
+                        {
+                            "url": "https://activity.lagou.com/activity/dist/2017-summary/images/cover-detail.png?v=3",
+                            "path": "images/cover-detail.png"
+                        },
+                        {
+                            "url": "https://activity.lagou.com/activity/dist/2017-summary/images/cover-btn.png?v=3",
+                            "path": "images/cover-btn.png"
+                        },
+                        {
+                            "url": "https://activity.lagou.com/activity/dist/2017-summary/images/icon.png?v=3",
+                            "path": "images/icon.png"
+                        },
+                        {
+                            "url": "https://activity.lagou.com/activity/dist/2017-summary/images/title-bg.png?v=3",
+                            "path": "images/title-bg.png"
+                        },
+                        {
+                            "url": "https://activity.lagou.com/activity/dist/2017-summary/images/mark.png?v=3",
+                            "path": "images/mark.png"
+                        },
+                        {
+                            "url": "https://activity.lagou.com/activity/dist/2017-summary/images/page0-icon.png?v=3",
+                            "path": "images/page0-icon.png"
+                        },
+                        {
+                            "url": "https://activity.lagou.com/activity/dist/2017-summary/images/page0-center-bg.png?v=3",
+                            "path": "images/page0-center-bg.png"
+                        },
+                        {
+                            "url": "https://activity.lagou.com/activity/dist/2017-summary/images/page1-icon.png?v=3",
+                            "path": "images/page1-icon.png"
+                        },
+                        {
+                            "url": "https://activity.lagou.com/activity/dist/2017-summary/images/page1-center-bg.png?v=3",
+                            "path": "images/page1-center-bg.png"
+                        },
+                        {
+                            "url": "https://activity.lagou.com/activity/dist/2017-summary/images/page2-icon.png?v=3",
+                            "path": "images/page2-icon.png"
+                        },
+                        {
+                            "url": "https://activity.lagou.com/activity/dist/2017-summary/images/page3-icon.png?v=3",
+                            "path": "images/page3-icon.png"
+                        },
+                        {
+                            "url": "https://activity.lagou.com/activity/dist/2017-summary/images/page2-center-bg.png?v=3",
+                            "path": "images/page2-center-bg.png"
+                        },
+                        {
+                            "url": "https://activity.lagou.com/activity/dist/2017-summary/images/page4-icon.png?v=3",
+                            "path": "images/page4-icon.png"
+                        },
+                        {
+                            "url": "https://activity.lagou.com/activity/dist/2017-summary/images/page4-center-bg.png?v=3",
+                            "path": "images/page4-center-bg.png"
+                        },
+                        {
+                            "url": "https://activity.lagou.com/activity/dist/2017-summary/images/page4-icon2.png?v=3",
+                            "path": "images/page4-icon2.png"
+                        },
+                        {
+                            "url": "https://activity.lagou.com/activity/dist/2017-summary/images/page5-icon.png?v=3",
+                            "path": "images/page5-icon.png"
+                        },
+                        {
+                            "url": "https://activity.lagou.com/activity/dist/2017-summary/images/page6-icon.png?v=3",
+                            "path": "images/page6-icon.png"
+                        },
+                        {
+                            "url": "https://activity.lagou.com/activity/dist/2017-summary/images/page7-icon.png?v=3",
+                            "path": "images/page7-icon.png"
+                        },
+                        {
+                            "url": "https://activity.lagou.com/activity/dist/2017-summary/images/page7-center-bg.png?v=3",
+                            "path": "images/page7-center-bg.png"
+                        },
+                        {
+                            "url": "https://activity.lagou.com/activity/dist/2017-summary/images/page7-icon2.png?v=3",
+                            "path": "images/page7-icon2.png"
+                        },
+                        {
+                            "url": "https://activity.lagou.com/activity/dist/2017-summary/images/page8-icon.png?v=3",
+                            "path": "images/page8-icon.png"
+                        },
+                        {
+                            "url": "https://activity.lagou.com/activity/dist/2017-summary/images/page8-logo-0.png?v=3",
+                            "path": "images/page8-logo-0.png"
+                        },
+                        {
+                            "url": "https://activity.lagou.com/activity/dist/2017-summary/images/page8-logo-1.png?v=3",
+                            "path": "images/page8-logo-1.png"
+                        },
+                        {
+                            "url": "https://activity.lagou.com/activity/dist/2017-summary/images/page8-logo-2.png?v=3",
+                            "path": "images/page8-logo-2.png"
+                        },
+                        {
+                            "url": "https://activity.lagou.com/activity/dist/2017-summary/images/page8-title-bg-sohu.png?v=3",
+                            "path": "images/page8-title-bg-sohu.png"
+                        },
+                        {
+                            "url": "https://activity.lagou.com/activity/dist/2017-summary/images/page8-logo-sohu.png?v=3",
+                            "path": "images/page8-logo-sohu.png"
+                        },
+                        {
+                            "url": "https://activity.lagou.com/activity/dist/2017-summary/images/page8-welfare-sohu.png?v=3",
+                            "path": "images/page8-welfare-sohu.png"
+                        },
+                        {
+                            "url": "https://activity.lagou.com/activity/dist/2017-summary/images/page8-light.png?v=3",
+                            "path": "images/page8-light.png"
+                        },
+                        {
+                            "url": "https://activity.lagou.com/activity/dist/2017-summary/images/page8-other.png?v=3",
+                            "path": "images/page8-other.png"
+                        },
+                        {
+                            "url": "https://activity.lagou.com/activity/dist/2017-summary/images/page8-plane.png?v=3",
+                            "path": "images/page8-plane.png"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "failures": []
+}

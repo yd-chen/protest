@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box {
+        width: 375px;
+        height: 168px;
+        background: pink;
+        background: #fff;
+    }
+</style>
+<body>
+    <div class="box">
+        <img id="review-img" src="" alt="">
+    </div>
+
+    <script>
+        (function() {
+            var canvas = document.createElement('canvas');
+            var context = canvas.getContext('2d');
+            canvas.width = 200;
+            canvas.height = 42;
+
+            // 名字、ID
+            var name = '昵称：笔尖时光';
+            var id = 'ID：2761142'
+            context.fillStyle = 'rgba(255, 255, 255, 0.5)';
+            context.font = '500 16px PingFangSC-Medium, PingFang SC';
+            context.textAlign = 'left';
+            context.strokeStyle = 'rgba(25, 25, 25, 0.4)'
+            context.strokeText(name, 0, 16)
+            context.strokeText(id, 0, 38)
+            var base64 = canvas.toDataURL('image/png', 0.9);
+            document.getElementById('review-img').src = base64;
+        }())
+    </script>
+</body>
+</html>
